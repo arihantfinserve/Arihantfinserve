@@ -1,0 +1,42 @@
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.subtitle {
+  color: #d4af37; /* Gold color */
+  text-transform: uppercase;
+  letter-spacing: 0.2em; /* tracking-widest */
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Optional dark mode support */
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: #f3f4f6;
+  }
+  .description {
+    color: #9ca3af;
+  }
+}

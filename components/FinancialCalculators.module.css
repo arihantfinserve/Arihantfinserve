@@ -1,0 +1,115 @@
+.container {
+  background: var(--bg-card, #ffffff);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-primary, #1a1a1a);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color, #eeeeee);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--text-secondary, #666666);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  color: var(--primary-color, #0056b3);
+}
+
+.tabBtn.active {
+  color: var(--primary-color, #0056b3);
+  border-bottom-color: var(--primary-color, #0056b3);
+  font-weight: 600;
+}
+
+.calculatorForm {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  color: var(--text-primary, #333333);
+  font-weight: 500;
+}
+
+.input {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--primary-color, #0056b3);
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.1);
+}
+
+.resultBox {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--bg-hover, #f5f8fc);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color, #0056b3);
+}
+
+.resultTitle {
+  font-size: 1rem;
+  color: var(--text-secondary, #666666);
+  margin-bottom: 0.5rem;
+}
+
+.resultValue {
+  font-size: 1.8rem;
+  color: var(--text-primary, #1a1a1a);
+  font-weight: 700;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary, #333333);
+  cursor: pointer;
+}

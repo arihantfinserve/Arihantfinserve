@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arihant Finserve | One Partner. Every Financial Solution.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap');
+        
+        :root {
+            --navy: #081B33;
+            --gold: #D4AF37;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Manrope', 'Inter', system_ui, sans-serif;
+            font-weight: 700;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 10px 30px -15px rgb(0 0 0 / 0.1);
+        }
+
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .nav-scrolled {
+            background-color: white;
+            box-shadow: 0 1px 0 0 #f1f5f9;
+        }
+
+        .problem-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            border-color: #D4AF37;
+        }
+
+        .solution-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .gold-btn {
+            background-color: #D4AF37;
+            color: #081B33;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background-color: #c5a02f;
+            transform: translateY(-2px);
+        }
+
+        .navy-btn {
+            background-color: #081B33;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .section-heading {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: #081B33;
+        }
+
+        .premium-card {
+            border-radius: 20px;
+            box-shadow: 0 10px 30px -15px rgb(8 27 51 / 0.1);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-white text-[#111827]">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="bg-white border-b border-gray-100 sticky top-0 z-50 transition-all">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-[#081B33] rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl tracking-tighter">A</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tight text-[#081B33]">Arihant</span>
+                        <span class="font-semibold text-2xl tracking-tight text-[#D4AF37]">Finserve</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#solutions" class="hover:text-[#D4AF37] transition-colors">Solutions</a>
+                    <a href="#industries" class="hover:text-[#D4AF37] transition-colors">Industries</a>
+                    <a href="#process" class="hover:text-[#D4AF37] transition-colors">How it Works</a>
+                    <a href="#resources" class="hover:text-[#D4AF37] transition-colors">Resources</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <!-- CTA -->
+                    <button onclick="showConsultationModal()"
+                            class="hidden md:block px-6 py-2.5 text-sm font-semibold rounded-2xl border border-[#081B33] hover:bg-[#081B33] hover:text-white transition-all">
+                        Book Consultation
+                    </button>
+                    
+                    <button onclick="showConsultationModal()"
+                            class="md:hidden px-5 py-2 text-sm font-semibold bg-[#081B33] text-white rounded-2xl">
+                        Book
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / FINANCIAL SOLUTION FINDER -->
+    <section class="max-w-screen-2xl mx-auto px-6 pt-16 pb-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <!-- Trust Badge -->
+            <div class="inline-flex items-center gap-x-2 bg-[#F8FAFC] px-4 py-1.5 rounded-3xl mb-6 border border-gray-100">
+                <div class="flex -space-x-1">
+                    <div class="w-5 h-5 bg-green-500 rounded-full border border-white"></div>
+                    <div class="w-5 h-5 bg-green-500 rounded-full border border-white"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-600">Trusted by 5,000+ businesses across Gujarat</span>
+            </div>
+
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter text-[#081B33] leading-[1.05]">
+                Your Complete<br>Financial Partner
+            </h1>
+            
+            <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+                Helping individuals, professionals and businesses grow with expert taxation, 
+                investments, compliance, loans and advisory.
+            </p>
+
+            <!-- Financial Solution Finder -->
+            <div class="mt-12">
+                <div class="mb-6">
+                    <span class="inline-block text-sm font-semibold tracking-[1px] text-[#D4AF37] mb-3">WHAT CAN WE HELP YOU WITH TODAY?</span>
+                    <h2 class="text-3xl font-semibold text-[#081B33]">Tell us your goal. We'll guide you.</h2>
+                </div>
+
+                <!-- Problem Selection Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+                    
+                    <!-- Card 1 -->
+                    <div onclick="selectProblem(this, 'income-tax')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-file-invoice text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">File Income Tax</div>
+                        <div class="text-sm text-gray-500 mt-1">ITR, Notices, Tax Planning</div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div onclick="selectProblem(this, 'company')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-building text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">Start a Company</div>
+                        <div class="text-sm text-gray-500 mt-1">Pvt Ltd, LLP, OPC Registration</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div onclick="selectProblem(this, 'invest')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-chart-line text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">Invest &amp; Build Wealth</div>
+                        <div class="text-sm text-gray-500 mt-1">Mutual Funds, Demat, Planning</div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div onclick="selectProblem(this, 'loan')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-handshake text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">Get Business Loan</div>
+                        <div class="text-sm text-gray-500 mt-1">Project Report, CMA, Funding</div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div onclick="selectProblem(this, 'insurance')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-shield-halved text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">Get Insurance</div>
+                        <div class="text-sm text-gray-500 mt-1">Health, Life, Corporate</div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div onclick="selectProblem(this, 'compliance')" 
+                         class="problem-card group cursor-pointer border border-gray-200 hover:border-[#D4AF37] bg-white rounded-3xl p-6 text-left premium-shadow">
+                        <div class="w-11 h-11 bg-[#F8FAFC] group-hover:bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-4 transition-colors">
+                            <i class="fa-solid fa-clipboard-check text-2xl text-[#081B33]"></i>
+                        </div>
+                        <div class="font-semibold text-lg">Business Compliance</div>
+                        <div class="text-sm text-gray-500 mt-1">GST, ROC, Audit, Certificates</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="border-y border-gray-100 bg-[#F8FAFC]">
+        <div class="max-w-screen-2xl mx-auto px-8 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 text-center">
+                <div>
+                    <div class="text-4xl font-semibold text-[#081B33]">5,000+</div>
+                    <div class="text-sm text-gray-500 mt-1">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold text-[#081B33]">15+</div>
+                    <div class="text-sm text-gray-500 mt-1">Cities Served</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold text-[#081B33]">10+</div>
+                    <div class="text-sm text-gray-500 mt-1">Years of Excellence</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-semibold text-[#081B33]">100%</div>
+                    <div class="text-sm text-gray-500 mt-1">Confidential Process</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOLUTIONS / 8 VERTICALS -->
+    <section id="solutions" class="max-w-screen-2xl mx-auto px-8 pt-16">
+        <div class="max-w-3xl mb-10">
+            <span class="text-[#D4AF37] text-sm font-semibold tracking-widest">SOLUTIONS</span>
+            <h2 class="section-heading mt-3">Everything you need.<br>One trusted partner.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Solution Cards -->
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer" onclick="window.location.href='#solutions'">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Tax &amp; Compliance</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Income Tax, GST, TDS, Accounting, Notices &amp; Balance Sheet</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-search-dollar text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Audit &amp; Assurance</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Tax Audit, Internal Audit, Statutory Audit, Trust Audit</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-hand-holding-usd text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Loans &amp; Finance</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Business Loans, Home Loans, Project Reports, CMA Data</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-chart-pie text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Investment &amp; Wealth</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Mutual Funds, Demat, Financial Planning, Goal-based investing</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-building text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Business Registration</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Pvt Ltd, LLP, OPC, Partnership Firm Registration</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-certificate text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">Licensing &amp; Compliance</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Trademark, FSSAI, ISO, IEC, DSC, PAN, TAN, PF/ESI</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-handshake text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">NGO &amp; Trust</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Trust Registration, 12AA, 80G, Section 8, NGO Darpan</p>
+            </div>
+
+            <div class="solution-card border border-gray-200 rounded-3xl p-7 hover:border-[#D4AF37] transition-all cursor-pointer">
+                <div class="flex items-center gap-x-4 mb-4">
+                    <div class="w-10 h-10 bg-[#F1F5F9] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-file-signature text-[#081B33] text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl">CA Certificates</h3>
+                </div>
+                <p class="text-gray-600 text-sm">Net Worth, Turnover, UDIN, Fund Utilization, Loan Certificates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ARIHANT -->
+    <section class="max-w-screen-2xl mx-auto px-8 py-16 bg-[#F8FAFC] mt-12 rounded-3xl">
+        <div class="max-w-3xl mb-10 px-2">
+            <h2 class="section-heading">Why businesses choose Arihant</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6 px-2">
+            <div class="bg-white p-8 rounded-3xl">
+                <div class="text-[#D4AF37] text-4xl mb-4"><i class="fa-solid fa-user-tie"></i></div>
+                <h4 class="font-semibold text-xl mb-2">Dedicated Relationship Manager</h4>
+                <p class="text-gray-600">One point of contact who understands your business deeply.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl">
+                <div class="text-[#D4AF37] text-4xl mb-4"><i class="fa-solid fa-clock"></i></div>
+                <h4 class="font-semibold text-xl mb-2">Fast Turnaround</h4>
+                <p class="text-gray-600">Most services delivered within 24-72 hours with full transparency.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl">
+                <div class="text-[#D4AF37] text-4xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4 class="font-semibold text-xl mb-2">100% Confidential &amp; Secure</h4>
+                <p class="text-gray-600">Your financial data is handled with strict professional confidentiality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-16 text-center">
+        <h2 class="text-4xl font-semibold tracking-tight">Ready to simplify your finances?</h2>
+        <p class="mt-4 text-xl text-gray-600">Book a free 15-minute consultation with our experts.</p>
+        
+        <button onclick="showConsultationModal()" 
+                class="mt-8 gold-btn px-10 py-4 text-lg rounded-3xl inline-flex items-center gap-x-3">
+            <span>Book Free Consultation</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#081B33] text-white/90">
+        <div class="max-w-screen-2xl mx-auto px-8 pt-14 pb-8 text-sm">
+            <div class="grid md:grid-cols-4 gap-y-10">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center">
+                            <span class="text-[#081B33] font-bold">A</span>
+                        </div>
+                        <span class="font-semibold text-white text-xl">Arihant Finserve</span>
+                    </div>
+                    <p class="text-white/60 text-sm">Gujarat's most trusted financial growth partner.</p>
+                </div>
+                
+                <div>
+                    <div class="font-semibold mb-4 text-white">Solutions</div>
+                    <div class="space-y-2 text-white/70 text-sm">
+                        <div>Tax &amp; Compliance</div>
+                        <div>Business Loans</div>
+                        <div>Company Registration</div>
+                        <div>Investments</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="font-semibold mb-4 text-white">Company</div>
+                    <div class="space-y-2 text-white/70 text-sm">
+                        <div>About Us</div>
+                        <div>Our Team</div>
+                        <div>Careers</div>
+                        <div>Contact</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="font-semibold mb-4 text-white">Head Office</div>
+                    <div class="text-white/70 text-sm leading-relaxed">
+                        S-44, 2nd Floor, Silicon Shoppers,<br>
+                        Udhana Main Road, Surat - 394210<br><br>
+                        <span class="font-medium text-white">+91 91576 57347</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-14 pt-8 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-y-2">
+                <div>© 2026 Arihant Finserve. All rights reserved.</div>
+                <div class="flex gap-x-6">
+                    <div>Privacy</div>
+                    <div>Terms</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal" onclick="hideConsultationModal()" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full max-w-md rounded-3xl p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="font-semibold text-2xl">Book Free Consultation</h3>
+                <button onclick="hideConsultationModal()" class="text-3xl leading-none text-gray-400 hover:text-gray-600">×</button>
+            </div>
+            
+            <form id="consultationForm" onsubmit="submitConsultation(event)">
+                <div class="space-y-5">
+                    <div>
+                        <label class="text-sm font-medium">Full Name</label>
+                        <input type="text" class="mt-1.5 w-full border border-gray-200 focus:border-[#D4AF37] rounded-2xl px-4 py-3 outline-none" required>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-sm font-medium">Phone Number</label>
+                            <input type="tel" class="mt-1.5 w-full border border-gray-200 focus:border-[#D4AF37] rounded-2xl px-4 py-3 outline-none" required>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium">Email</label>
+                            <input type="email" class="mt-1.5 w-full border border-gray-200 focus:border-[#D4AF37] rounded-2xl px-4 py-3 outline-none" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="text-sm font-medium">What do you need help with?</label>
+                        <select class="mt-1.5 w-full border border-gray-200 focus:border-[#D4AF37] rounded-2xl px-4 py-3 outline-none">
+                            <option>Income Tax / ITR Filing</option>
+                            <option>Company / LLP Registration</option>
+                            <option>Business Loan / Project Report</option>
+                            <option>GST &amp; Accounting</option>
+                            <option>Investment &amp; Mutual Funds</option>
+                            <option>Audit or Certification</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" 
+                        class="mt-8 w-full gold-btn py-4 rounded-3xl text-base font-semibold flex items-center justify-center gap-x-2">
+                    Request Consultation Slot
+                </button>
+                
+                <p class="text-center text-xs text-gray-500 mt-4">We usually respond within 2 hours during business hours.</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Problem Selection Logic (Financial Solution Finder)
+        function selectProblem(element, type) {
+            // Remove active state from all cards
+            document.querySelectorAll('.problem-card').forEach(card => {
+                card.classList.remove('border-[#D4AF37]', 'ring-1', 'ring-[#D4AF37]');
+                card.classList.add('border-gray-200');
+            });
+            
+            // Add active state
+            element.classList.remove('border-gray-200');
+            element.classList.add('border-[#D4AF37]', 'ring-1', 'ring-[#D4AF37]');
+            
+            // Show relevant action based on selection
+            setTimeout(() => {
+                const modal = document.getElementById('consultationModal');
+                const form = document.getElementById('consultationForm');
+                
+                // Pre-fill based on selection
+                if (type === 'income-tax') {
+                    form.querySelector('select').value = 'Income Tax / ITR Filing';
+                } else if (type === 'company') {
+                    form.querySelector('select').value = 'Company / LLP Registration';
+                } else if (type === 'loan') {
+                    form.querySelector('select').value = 'Business Loan / Project Report';
+                } else if (type === 'invest') {
+                    form.querySelector('select').value = 'Investment &amp; Mutual Funds';
+                }
+                
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }, 600);
+        }
+
+        function showConsultationModal() {
+            const modal = document.getElementById('consultationModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function hideConsultationModal() {
+            const modal = document.getElementById('consultationModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function submitConsultation(e) {
+            e.preventDefault();
+            
+            const modalContent = e.target.parentElement;
+            modalContent.innerHTML = `
+                <div class="text-center py-8">
+                    <div class="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-check text-green-600 text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Request Received!</h3>
+                    <p class="mt-3 text-gray-600">Thank you. Our team will contact you within 2 hours to schedule your free consultation.</p>
+                    
+                    <button onclick="hideConsultationModal()" 
+                            class="mt-8 px-8 py-3 bg-[#081B33] text-white rounded-2xl font-medium">
+                        Close
+                    </button>
+                </div>
+            `;
+        }
+
+        // Keyboard escape for modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") {
+                const modal = document.getElementById('consultationModal');
+                if (!modal.classList.contains('hidden')) {
+                    modal.classList.remove('flex');
+                    modal.classList.add('hidden');
+                }
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        console.log('%c[Arihant Finserve] Premium website prototype loaded successfully. Based on 6-Volume PRD.', 'color:#64748b');
+    </script>
+</body>
+</html>
