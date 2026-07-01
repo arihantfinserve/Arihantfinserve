@@ -24,6 +24,7 @@ export default function Navbar() {
           </div>
           <div className={styles.topBarRight}>
             <div className={styles.socialLinks}>
+              <a href="https://www.linkedin.com/in/cachiragmjain" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
               <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
               <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
             </div>

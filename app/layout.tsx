@@ -107,7 +107,10 @@ export default function RootLayout({
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CA Certificates (Net Worth, Turnover)" } },
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "FSSAI & Trademark Registration" } }
                     ]
-                  }
+                  },
+                  "sameAs": [
+                    "https://www.linkedin.com/in/cachiragmjain"
+                  ]
                 },
                 {
                   "@type": "Person",
@@ -116,7 +119,11 @@ export default function RootLayout({
                   "jobTitle": "Founder & Managing Director",
                   "worksFor": {
                     "@id": "https://arihantfinserve.com/#organization"
-                  }
+                  },
+                  "url": "https://www.linkedin.com/in/cachiragmjain",
+                  "sameAs": [
+                    "https://www.linkedin.com/in/cachiragmjain"
+                  ]
                 },
                 {
                   "@type": "FAQPage",
