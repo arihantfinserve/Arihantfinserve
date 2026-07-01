@@ -8,6 +8,11 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
   return (
     <header className={styles.header}>
       {/* Top Bar */}
@@ -181,13 +186,63 @@ export default function Navbar() {
           <Link href="/contact" className={styles.navItem}>Contact</Link>
         </nav>
 
-        <div className={styles.actions}>
-          <a href="https://wa.me/919157657347?text=I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer">
-            <Button variant="primary">
-              Book Consultation
-            </Button>
-          </a>
+        <div className={styles.navRight}>
+          <div className={styles.actions}>
+            <a href="https://wa.me/919157657347?text=I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary">
+                Book Consultation
+              </Button>
+            </a>
+          </div>
+          <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu} aria-label="Toggle menu">
+            <i className={`fa-solid ${isMobileMenuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
+          </button>
         </div>
+      </div>
+
+      {/* Mobile Drawer */}
+      <div className={`${styles.mobileDrawer} ${isMobileMenuOpen ? styles.mobileDrawerOpen : ''}`}>
+        <nav className={styles.mobileNav}>
+          <Link href="/" className={styles.mobileNavItem} onClick={toggleMobileMenu}>Home</Link>
+          <Link href="/about" className={styles.mobileNavItem} onClick={toggleMobileMenu}>About Us</Link>
+          
+          {/* Mobile Services Accordion */}
+          <div className={styles.mobileNavAccordion}>
+            <button 
+              className={styles.mobileAccordionBtn} 
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            >
+              Services <i className={`fa-solid fa-chevron-${mobileServicesOpen ? 'up' : 'down'}`}></i>
+            </button>
+            <div className={`${styles.mobileAccordionContent} ${mobileServicesOpen ? styles.mobileAccordionOpen : ''}`}>
+              <div className={styles.mobileAccordionSection}>
+                <h4><i className="fa-solid fa-rocket"></i> Registrations</h4>
+                <Link href="/services/pvt-ltd" onClick={toggleMobileMenu}>Pvt Ltd / LLP / OPC</Link>
+                <Link href="/services/fssai" onClick={toggleMobileMenu}>FSSAI License</Link>
+              </div>
+              <div className={styles.mobileAccordionSection}>
+                <h4><i className="fa-solid fa-file-invoice-dollar"></i> Taxation</h4>
+                <Link href="/services/income-tax-return" onClick={toggleMobileMenu}>Income Tax Return</Link>
+                <Link href="/services/gst-registration" onClick={toggleMobileMenu}>GST Registration</Link>
+              </div>
+              <div className={styles.mobileAccordionSection}>
+                <h4><i className="fa-solid fa-clipboard-check"></i> Audit & Assurance</h4>
+                <Link href="/services/tax-audit" onClick={toggleMobileMenu}>Tax Audit</Link>
+                <Link href="/services/statutory-audit" onClick={toggleMobileMenu}>Statutory Audit</Link>
+              </div>
+              <div className={styles.mobileAccordionSection}>
+                <h4><i className="fa-solid fa-building-columns"></i> Business Loan</h4>
+                <Link href="/services/project-reports" onClick={toggleMobileMenu}>Project Reports</Link>
+                <Link href="/services/cma-data" onClick={toggleMobileMenu}>CMA Data</Link>
+              </div>
+              <Link href="/services" className={styles.viewAllServicesBtn} onClick={toggleMobileMenu}>View All Services</Link>
+            </div>
+          </div>
+
+          <Link href="/packages" className={styles.mobileNavItem} onClick={toggleMobileMenu}>Speciality & Packages</Link>
+          <Link href="/utilities" className={styles.mobileNavItem} onClick={toggleMobileMenu}>Utility Hub</Link>
+          <Link href="/contact" className={styles.mobileNavItem} onClick={toggleMobileMenu}>Contact</Link>
+        </nav>
       </div>
     </header>
   );

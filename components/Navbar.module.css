@@ -296,3 +296,153 @@
   align-items: center;
   gap: 16px;
 }
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--primary, #0F172A);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobileDrawer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--background, #ffffff);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+}
+
+.mobileDrawerOpen {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.mobileNavItem {
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary, #0F172A);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.mobileNavAccordion {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.mobileAccordionBtn {
+  width: 100%;
+  text-align: left;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary, #0F172A);
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobileAccordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.mobileAccordionOpen {
+  max-height: 1000px;
+}
+
+.mobileAccordionSection {
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.mobileAccordionSection h4 {
+  font-size: 14px;
+  color: var(--accent-gold, #D4AF37);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobileAccordionSection a {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.viewAllServicesBtn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--accent-gold, #D4AF37);
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 16px;
+}
+
+@media (max-width: 1024px) {
+  .navLinks {
+    display: none;
+  }
+  
+  .actions {
+    display: none;
+  }
+
+  .mobileMenuBtn {
+    display: block;
+  }
+
+  .mobileDrawer {
+    display: block;
+  }
+
+  .topBarLeft {
+    display: none;
+  }
+
+  .topBarContainer {
+    justify-content: flex-end;
+  }
+
+  .navContainer {
+    padding: 16px 20px;
+  }
+
+  .mobileNav {
+    padding: 0 20px;
+  }
+}
