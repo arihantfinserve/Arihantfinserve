@@ -71,20 +71,20 @@ export default function AboutPage() {
 
           <div className="bg-[#f8fafc] dark:bg-[#163057] rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center mb-20 shadow-sm border border-gray-100 dark:border-gray-800">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-[#081b33] to-[#D4AF37] flex-shrink-0 flex items-center justify-center text-white text-6xl font-bold shadow-xl border-4 border-white dark:border-[#081b33]">
-              CJ
+              MJ
             </div>
             <div>
-              <h3 className="text-3xl font-bold text-[var(--primary)] dark:text-white">CA Chirag M Jain</h3>
+              <h3 className="text-3xl font-bold text-[var(--primary)] dark:text-white">MBA Manish M Jain</h3>
               <p className="text-[#D4AF37] font-semibold text-lg mb-6 tracking-wide">Founder & Chief Consultant</p>
               <div className="space-y-4 text-gray-700 dark:text-gray-300 text-lg">
                 <p>
-                  A Chartered Accountant with over a decade of rich experience. CA Final from ICAI (2014) holding DISA and FAFD certifications.
+                  An MBA professional with over a decade of rich experience in the financial sector.
                 </p>
                 <p>
-                  As an active resource person for ICAI and trainer for GST Shayaks, CA Chirag M Jain brings unparalleled technical knowledge in Bank Branch Audits, Income Tax Scrutiny, and Project Financing.
+                  As an active financial consultant, MBA Manish M Jain brings unparalleled technical knowledge in Project Financing, Investment Strategies, and Corporate Advisory.
                 </p>
                 <p>
-                  With an M.Com background and extensive teaching experience of 1500+ CA/CS students, he leads Arihant Finserve with academic rigor and practical brilliance.
+                  With extensive business acumen and experience, he leads Arihant Finserve with academic rigor and practical brilliance.
                 </p>
               </div>
             </div>
