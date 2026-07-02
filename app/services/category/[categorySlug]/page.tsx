@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { categoriesData } from '@/lib/servicesData';
-import styles from '../../[slug]/page.module.css';
+import styles from '../../services.module.css';
 
 type Props = {
   params: Promise<{ categorySlug: string }>;

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
-import styles from './page.module.css';
+import styles from '../services.module.css';
 
 interface ServiceClientProps {
   title: string;

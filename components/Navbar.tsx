@@ -70,7 +70,7 @@ export default function Navbar() {
                 <div className={styles.megaMenuGrid} onClick={() => setIsMegaMenuOpen(false)}>
                   {/* Column 1 */}
                   <div className={styles.megaMenuColumn}>
-                    <div className={styles.megaMenuTitle}><i className="fa-solid fa-rocket" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Startup & Registrations</div>
+                    <Link href="/services/category/startup-registrations" className={styles.megaMenuTitle} style={{ textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-rocket" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Startup & Registrations</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/pvt-ltd">Pvt Ltd / LLP / OPC</Link></li>
                       <li><Link href="/services/section-8">Section 8 / Nidhi Company</Link></li>
@@ -81,7 +81,7 @@ export default function Navbar() {
                       <li><Link href="/services/iso">ISO Certification</Link></li>
                     </ul>
 
-                    <div className={styles.megaMenuTitle} style={{ marginTop: '15px' }}><i className="fa-solid fa-building" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Company, LLP & ROC Services</div>
+                    <Link href="/services/category/company-llp-roc" className={styles.megaMenuTitle} style={{ marginTop: '15px', textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-building" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Company, LLP & ROC Services</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/partnership-firm">Partnership Firm Documentation</Link></li>
                       <li><Link href="/services/pvt-ltd-registration">Private Limited Company Registration</Link></li>
@@ -95,7 +95,7 @@ export default function Navbar() {
 
                   {/* Column 2 */}
                   <div className={styles.megaMenuColumn}>
-                    <div className={styles.megaMenuTitle}><i className="fa-solid fa-file-invoice-dollar" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Taxation, Accounting & Compliance</div>
+                    <Link href="/services/category/taxation-accounting-compliance" className={styles.megaMenuTitle} style={{ textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-file-invoice-dollar" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Taxation, Accounting & Compliance</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/income-tax-return">Income Tax Return Filing</Link></li>
                       <li><Link href="/services/income-tax-notice">Income Tax Notice Handling</Link></li>
@@ -107,7 +107,7 @@ export default function Navbar() {
                       <li><Link href="/services/balance-sheet">Balance Sheet Preparation</Link></li>
                     </ul>
 
-                    <div className={styles.megaMenuTitle} style={{ marginTop: '15px' }}><i className="fa-solid fa-clipboard-check" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Audit & Assurance</div>
+                    <Link href="/services/category/audit-assurance" className={styles.megaMenuTitle} style={{ marginTop: '15px', textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-clipboard-check" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Audit & Assurance</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/tax-audit">Tax Audit</Link></li>
                       <li><Link href="/services/statutory-audit">Statutory Audit</Link></li>
@@ -120,7 +120,7 @@ export default function Navbar() {
 
                   {/* Column 3 */}
                   <div className={styles.megaMenuColumn}>
-                    <div className={styles.megaMenuTitle}><i className="fa-solid fa-building-columns" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Business Loan & Finance Services</div>
+                    <Link href="/services/category/business-loan-finance" className={styles.megaMenuTitle} style={{ textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-building-columns" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Business Loan & Finance Services</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/project-reports">Project Reports</Link></li>
                       <li><Link href="/services/cma-data">CMA Data</Link></li>
@@ -131,7 +131,7 @@ export default function Navbar() {
                       <li><Link href="/services/lei-registration">LEI Registration Assistance</Link></li>
                     </ul>
 
-                    <div className={styles.megaMenuTitle} style={{ marginTop: '15px' }}><i className="fa-solid fa-certificate" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> CA Certificates</div>
+                    <Link href="/services/category/ca-certificates" className={styles.megaMenuTitle} style={{ marginTop: '15px', textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-certificate" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> CA Certificates</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/net-worth-cert">Net Worth Certificate</Link></li>
                       <li><Link href="/services/turnover-cert">Turnover Certificate</Link></li>
@@ -144,7 +144,7 @@ export default function Navbar() {
 
                   {/* Column 4 */}
                   <div className={styles.megaMenuColumn}>
-                    <div className={styles.megaMenuTitle}><i className="fa-solid fa-shield-halved" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Insurance Services</div>
+                    <Link href="/services/category/insurance-services" className={styles.megaMenuTitle} style={{ textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-shield-halved" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Insurance Services</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/life-health-insurance">Life & Health Insurance Advising</Link></li>
                       <li><Link href="/services/corporate-business-insurance">Corporate & Business Insurance</Link></li>
@@ -153,7 +153,7 @@ export default function Navbar() {
                       <li><Link href="/services/claim-support">Claim Support & Consulting</Link></li>
                     </ul>
 
-                    <div className={styles.megaMenuTitle} style={{ marginTop: '15px' }}><i className="fa-solid fa-hands-holding" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> NGO, Trust & FPO Services</div>
+                    <Link href="/services/category/ngo-trust-fpo" className={styles.megaMenuTitle} style={{ marginTop: '15px', textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-hands-holding" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> NGO, Trust & FPO Services</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/trust-deed">Trust Deed Drafting</Link></li>
                       <li><Link href="/services/trust-registration">Trust Registration</Link></li>
@@ -164,7 +164,7 @@ export default function Navbar() {
                       <li><Link href="/services/fpo-advisory">FPO / Producer Company Advisory</Link></li>
                     </ul>
                     
-                    <div className={styles.megaMenuTitle} style={{ marginTop: '15px' }}><i className="fa-solid fa-id-card" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Business Registration & Licence Services</div>
+                    <Link href="/services/category/business-registration-licence" className={styles.megaMenuTitle} style={{ marginTop: '15px', textDecoration: 'none', display: 'block' }}><i className="fa-solid fa-id-card" style={{ color: 'var(--accent-gold)', marginRight: '8px' }}></i> Business Registration & Licence Services</Link>
                     <ul className={styles.megaMenuList}>
                       <li><Link href="/services/pan-tan">PAN & TAN Services</Link></li>
                       <li><Link href="/services/dsc">DSC (Digital Signature)</Link></li>
@@ -216,15 +216,15 @@ export default function Navbar() {
             </button>
             <div className={`${styles.mobileAccordionContent} ${mobileServicesOpen ? styles.mobileAccordionOpen : ''}`}>
               <div className={styles.mobileAccordionSection}>
-                <Link href="/services/pvt-ltd" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-rocket"></i> Startup & Registrations</h4></Link>
-                <Link href="/services/roc-compliance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building"></i> Company, LLP & ROC Services</h4></Link>
-                <Link href="/services/income-tax-return" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-file-invoice-dollar"></i> Taxation, Accounting & Compliance</h4></Link>
-                <Link href="/services/tax-audit" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-clipboard-check"></i> Audit & Assurance</h4></Link>
-                <Link href="/services/project-reports" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building-columns"></i> Business Loan & Finance</h4></Link>
-                <Link href="/services/ca-certs" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-certificate"></i> CA Certificates</h4></Link>
-                <Link href="/services/life-health-insurance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-shield-halved"></i> Insurance Services</h4></Link>
-                <Link href="/services/trust-registration" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-hands-holding"></i> NGO, Trust & FPO Services</h4></Link>
-                <Link href="/services/pan-tan" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-id-card"></i> Business Registration & Licences</h4></Link>
+                <Link href="/services/category/startup-registrations" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-rocket"></i> Startup & Registrations</h4></Link>
+                <Link href="/services/category/company-llp-roc" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building"></i> Company, LLP & ROC Services</h4></Link>
+                <Link href="/services/category/taxation-accounting-compliance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-file-invoice-dollar"></i> Taxation, Accounting & Compliance</h4></Link>
+                <Link href="/services/category/audit-assurance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-clipboard-check"></i> Audit & Assurance</h4></Link>
+                <Link href="/services/category/business-loan-finance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building-columns"></i> Business Loan & Finance</h4></Link>
+                <Link href="/services/category/ca-certificates" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-certificate"></i> CA Certificates</h4></Link>
+                <Link href="/services/category/insurance-services" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-shield-halved"></i> Insurance Services</h4></Link>
+                <Link href="/services/category/ngo-trust-fpo" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-hands-holding"></i> NGO, Trust & FPO Services</h4></Link>
+                <Link href="/services/category/business-registration-licence" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-id-card"></i> Business Registration & Licences</h4></Link>
               </div>
               <Link href="/services" className={styles.viewAllServicesBtn} onClick={toggleMobileMenu}>View All Services</Link>
             </div>

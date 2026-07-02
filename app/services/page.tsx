@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './[slug]/page.module.css';
+import styles from './services.module.css';
 import { categoriesData } from '@/lib/servicesData';
 
 export const metadata = {
