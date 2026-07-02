@@ -216,24 +216,15 @@ export default function Navbar() {
             </button>
             <div className={`${styles.mobileAccordionContent} ${mobileServicesOpen ? styles.mobileAccordionOpen : ''}`}>
               <div className={styles.mobileAccordionSection}>
-                <h4><i className="fa-solid fa-rocket"></i> Registrations</h4>
-                <Link href="/services/pvt-ltd" onClick={toggleMobileMenu}>Pvt Ltd / LLP / OPC</Link>
-                <Link href="/services/fssai" onClick={toggleMobileMenu}>FSSAI License</Link>
-              </div>
-              <div className={styles.mobileAccordionSection}>
-                <h4><i className="fa-solid fa-file-invoice-dollar"></i> Taxation</h4>
-                <Link href="/services/income-tax-return" onClick={toggleMobileMenu}>Income Tax Return</Link>
-                <Link href="/services/gst-registration" onClick={toggleMobileMenu}>GST Registration</Link>
-              </div>
-              <div className={styles.mobileAccordionSection}>
-                <h4><i className="fa-solid fa-clipboard-check"></i> Audit & Assurance</h4>
-                <Link href="/services/tax-audit" onClick={toggleMobileMenu}>Tax Audit</Link>
-                <Link href="/services/statutory-audit" onClick={toggleMobileMenu}>Statutory Audit</Link>
-              </div>
-              <div className={styles.mobileAccordionSection}>
-                <h4><i className="fa-solid fa-building-columns"></i> Business Loan</h4>
-                <Link href="/services/project-reports" onClick={toggleMobileMenu}>Project Reports</Link>
-                <Link href="/services/cma-data" onClick={toggleMobileMenu}>CMA Data</Link>
+                <Link href="/services/pvt-ltd" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-rocket"></i> Startup & Registrations</h4></Link>
+                <Link href="/services/roc-compliance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building"></i> Company, LLP & ROC Services</h4></Link>
+                <Link href="/services/income-tax-return" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-file-invoice-dollar"></i> Taxation, Accounting & Compliance</h4></Link>
+                <Link href="/services/tax-audit" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-clipboard-check"></i> Audit & Assurance</h4></Link>
+                <Link href="/services/project-reports" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-building-columns"></i> Business Loan & Finance</h4></Link>
+                <Link href="/services/ca-certs" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-certificate"></i> CA Certificates</h4></Link>
+                <Link href="/services/life-health-insurance" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-shield-halved"></i> Insurance Services</h4></Link>
+                <Link href="/services/trust-registration" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-hands-holding"></i> NGO, Trust & FPO Services</h4></Link>
+                <Link href="/services/pan-tan" onClick={toggleMobileMenu}><h4><i className="fa-solid fa-id-card"></i> Business Registration & Licences</h4></Link>
               </div>
               <Link href="/services" className={styles.viewAllServicesBtn} onClick={toggleMobileMenu}>View All Services</Link>
             </div>

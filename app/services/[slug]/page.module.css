@@ -53,10 +53,17 @@
   100% { transform: translate(30px, 50px) scale(1.1); }
 }
 
+@media (max-width: 768px) {
+  .glowOrb1, .glowOrb2 {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
 .heroContent {
   position: relative;
   z-index: 1;
-  max-w-7xl: 800px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +88,7 @@
   line-height: 1.1;
   background: linear-gradient(to right, #ffffff, #d1d5db);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
@@ -353,4 +361,58 @@
 .wowSubmitBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 20px -3px rgba(212, 175, 55, 0.4);
+}
+
+/* Features Grid (for /services page) */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #d4af37;
+}
+
+.featureIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  color: #0f172a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .featureIcon {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  color: #d4af37;
+}
+
+.featureText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
 }
