@@ -64,7 +64,9 @@ export default function Navbar() {
             onMouseEnter={() => setIsMegaMenuOpen(true)}
             onMouseLeave={() => setIsMegaMenuOpen(false)}
           >
-            <span>Services <i className="fa-solid fa-chevron-down" style={{ fontSize: '10px', marginLeft: '4px' }}></i></span>
+            <Link href="/services" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }} onClick={() => setIsMegaMenuOpen(false)}>
+              Services <i className="fa-solid fa-chevron-down" style={{ fontSize: '10px', marginLeft: '4px' }}></i>
+            </Link>
             <div className={`${styles.megaMenuWrapper} ${isMegaMenuOpen ? styles.open : ''}`}>
               <div className={styles.megaMenuContent}>
                 <div className={styles.megaMenuGrid} onClick={() => setIsMegaMenuOpen(false)}>
