@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../services/[slug]/page.module.css';
+import styles from '../services/services.module.css';
 
 export const metadata = {
   title: 'Privacy Policy | Arihant Finserve',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <main>
-      <section className={styles.hero} style={{ padding: '6rem 2rem 4rem' }}>
+      <section className={styles.wowHero} style={{ padding: '6rem 2rem 4rem' }}>
         <h1 className={styles.heroTitle}>Privacy Policy</h1>
         <p className={styles.heroSubtitle}>
           How we collect, use, and protect your personal and financial information.

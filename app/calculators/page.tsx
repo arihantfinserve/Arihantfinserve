@@ -1,6 +1,6 @@
 import React from 'react';
 import FinancialCalculators from '@/components/FinancialCalculators';
-import styles from '../services/[slug]/page.module.css';
+import styles from '../services/services.module.css';
 
 export const metadata = {
   title: 'Financial Calculators | Arihant Finserve',
@@ -10,7 +10,7 @@ export const metadata = {
 export default function CalculatorsPage() {
   return (
     <main>
-      <section className={styles.hero}>
+      <section className={styles.wowHero}>
         <h1 className={styles.heroTitle}>Financial Calculators</h1>
         <p className={styles.heroSubtitle}>
           Empower your financial decisions with our easy-to-use calculation tools.

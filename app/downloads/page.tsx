@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../services/[slug]/page.module.css';
+import styles from '../services/services.module.css';
 
 export const metadata = {
   title: 'Downloads | Arihant Finserve',
@@ -18,7 +18,7 @@ export default function DownloadsPage() {
 
   return (
     <main>
-      <section className={styles.hero}>
+      <section className={styles.wowHero}>
         <h1 className={styles.heroTitle}>Downloads Center</h1>
         <p className={styles.heroSubtitle}>
           Access essential financial forms, guides, checklists, and templates to streamline your documentation.

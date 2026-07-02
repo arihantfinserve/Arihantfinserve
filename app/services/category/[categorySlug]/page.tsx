@@ -38,7 +38,7 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <main>
-      <section className={styles.hero}>
+      <section className={styles.wowHero}>
         <h1 className={styles.heroTitle}>{category.title}</h1>
         <p className={styles.heroSubtitle}>
           Select a specific service below to learn more about how we can help you.

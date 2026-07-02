@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../services/[slug]/page.module.css';
+import styles from '../services/services.module.css';
 
 export const metadata = {
   title: 'FAQ | Arihant Finserve',
@@ -36,7 +36,7 @@ export default function FAQPage() {
 
   return (
     <main>
-      <section className={styles.hero}>
+      <section className={styles.wowHero}>
         <h1 className={styles.heroTitle}>Frequently Asked Questions</h1>
         <p className={styles.heroSubtitle}>
           Find answers to common questions about our services and processes.

@@ -11,7 +11,7 @@ export const metadata = {
 export default function ServicesOverviewPage() {
   return (
     <main>
-      <section className={styles.hero}>
+      <section className={styles.wowHero}>
         <h1 className={styles.heroTitle}>Our Services</h1>
         <p className={styles.heroSubtitle}>
           Comprehensive financial, advisory, and compliance solutions designed to empower your business.
