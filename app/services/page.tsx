@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './[slug]/page.module.css';
+import { categoriesData } from '@/lib/servicesData';
 
 export const metadata = {
   title: 'Our Services | Arihant Finserve',
@@ -8,18 +9,6 @@ export const metadata = {
 };
 
 export default function ServicesOverviewPage() {
-  const categories = [
-    { title: 'Startup & Registrations', slug: 'pvt-ltd', icon: 'fa-rocket' },
-    { title: 'Company, LLP & ROC Services', slug: 'roc-compliance', icon: 'fa-building' },
-    { title: 'Taxation, Accounting & Compliance', slug: 'income-tax-return', icon: 'fa-file-invoice-dollar' },
-    { title: 'Audit & Assurance', slug: 'tax-audit', icon: 'fa-clipboard-check' },
-    { title: 'Business Loan & Finance Services', slug: 'project-reports', icon: 'fa-building-columns' },
-    { title: 'CA Certificates', slug: 'ca-certs', icon: 'fa-certificate' },
-    { title: 'Insurance Services', slug: 'life-health-insurance', icon: 'fa-shield-halved' },
-    { title: 'NGO, Trust & FPO Services', slug: 'trust-registration', icon: 'fa-hands-holding' },
-    { title: 'Business Registration & Licence Services', slug: 'pan-tan', icon: 'fa-id-card' }
-  ];
-
   return (
     <main>
       <section className={styles.hero}>
@@ -35,8 +24,8 @@ export default function ServicesOverviewPage() {
           <p>Select a category below to discover how Arihant Finserve can assist you.</p>
           
           <div className={styles.featuresGrid} style={{ marginTop: '3rem', gap: '2rem' }}>
-            {categories.map((cat, idx) => (
-              <Link href={`/services/${cat.slug}`} key={idx} style={{ textDecoration: 'none' }}>
+            {categoriesData.map((cat, idx) => (
+              <Link href={`/services/category/${cat.categorySlug}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div className={styles.featureCard} style={{ height: '100%', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2.5rem 1.5rem' }}>
                   <div className={styles.featureIcon} style={{ width: '60px', height: '60px', fontSize: '1.8rem', marginBottom: '1rem' }}>
                     <i className={`fa-solid ${cat.icon}`}></i>
